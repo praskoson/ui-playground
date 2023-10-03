@@ -1,0 +1,55 @@
+.bien-glass-edge {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+
+  --extended-by: 80px;
+  --offset: 20px;
+  --thickness: 2px;
+  height: calc(var(--extended-by) + var(--offset));
+  /*   Offset is used to snuck the border backdrop slightly under the main backdrop for  smoother effect */
+  top: calc(100% - var(--offset) + var(--thickness));
+
+  /*   Make the blur bigger so that the light bleed effect spreads wider than blur on the first backdrop */
+  /*   Increase saturation and brightness to fake smooth chamfered edge reflections */
+  --filter: blur(90px) saturate(160%) brightness(1.3);
+  -webkit-backdrop-filter: var(--filter);
+  backdrop-filter: var(--filter);
+  pointer-events: none;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0,
+    black var(--offset),
+    transparent var(--offset)
+  );
+}
+
+.pink,
+.blue,
+.green {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.pink {
+  right: 90px;
+  top: 170px;
+  background: rgb(255, 0, 255);
+}
+
+.blue {
+  left: 40px;
+  top: 320px;
+  background: rgb(0, 0, 255);
+  animation: blink 1s linear infinite;
+}
+
+.green {
+  right: 90px;
+  top: 600px;
+  background: rgb(0, 255, 0);
+  animation: blink 3s linear infinite;
+}
