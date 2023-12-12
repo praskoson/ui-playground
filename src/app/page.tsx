@@ -51,6 +51,11 @@ export default function Home() {
             Like Button (Framer)
           </Link>
         </li>
+        <li>
+          <Link className="" href="/scroll-cards">
+            Scroll cards
+          </Link>
+        </li>
       </ul>
     </main>
   );
