@@ -56,6 +56,11 @@ export default function Home() {
             Scroll cards
           </Link>
         </li>
+        <li>
+          <Link className="" href="/designer-shadows">
+            Designer shadows
+          </Link>
+        </li>
       </ul>
     </main>
   );
