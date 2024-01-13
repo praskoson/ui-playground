@@ -1,0 +1,24 @@
+.animation {
+  scale: 0.8;
+  opacity: 0;
+  animation-timeline: view();
+
+  animation-name: appear;
+  animation-fill-mode: both;
+  /* animation: appear linear both; */
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+  /* animation-range-start: contain;
+  animation-range-end: contain; */
+  /* animation-range: contain; */
+  /* animation-range: contain 100px; */
+  /* contained + offset */
+  animation-range-start: contain 100px;
+  animation-range-end: contain 700px;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}

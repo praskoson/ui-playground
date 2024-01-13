@@ -61,6 +61,11 @@ export default function Home() {
             Designer shadows
           </Link>
         </li>
+        <li>
+          <Link className="" href="/scroll-listener-css">
+            Scroll Animations with CSS
+          </Link>
+        </li>
       </ul>
     </main>
   );

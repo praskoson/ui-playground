@@ -13,7 +13,7 @@ export const useSimpleModal = () => {
   };
   const dialogAttrObserver = useMemo(
     () =>
-      new MutationObserver((mutations) => {
+      new window.MutationObserver((mutations) => {
         mutations.forEach(async (mutation) => {
           if (mutation.attributeName === "open") {
             const dialog = mutation.target as HTMLDialogElement;

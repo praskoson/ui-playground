@@ -23,30 +23,26 @@ export default function Page() {
       <div className="p-20">
         <div className="mb-20 space-y-6 text-sm">
           <p>
-            What's the difference between dialogs and modals? when the modal is
-            open you cannot do anything on the page except for scroll. All other
-            interaction is blocked until you explicitly close the modal. On the
-            other hand, when the dialog is open you can still interact with the
-            page just like normal.
+            What's the difference between dialogs and modals? when the modal is open you cannot do
+            anything on the page except for scroll. All other interaction is blocked until you
+            explicitly close the modal. On the other hand, when the dialog is open you can still
+            interact with the page just like normal.
           </p>
           <p>
-            We expect the dialog/modal to close on outside click, but this isn't
-            natively supported, so we add JS for that.
+            We expect the dialog/modal to close on outside click, but this isn't natively supported,
+            so we add JS for that.
           </p>
           <p>
-            If you have a form in your dialog you can set the method attribute
-            of your form to dialog. This will cause the form to close the dialog
-            when it is submitted and most importantly it will NOT submit your
-            form. Instead the form data will be saved so if you reopen the same
-            dialog your form will have all the same data in it.
+            If you have a form in your dialog you can set the method attribute of your form to
+            dialog. This will cause the form to close the dialog when it is submitted and most
+            importantly it will NOT submit your form. Instead the form data will be saved so if you
+            reopen the same dialog your form will have all the same data in it.
           </p>
           <p>
-            This can be taken a step further since on any submit button in your
-            form you can add the formmethod="dialog" attribute to make that
-            button act as if the form method was set to dialog. This is useful
-            if you want to have a cancel button in your form that closes the
-            dialog without submitting the form while the normal submit button
-            would submit the form.{" "}
+            This can be taken a step further since on any submit button in your form you can add the
+            formmethod="dialog" attribute to make that button act as if the form method was set to
+            dialog. This is useful if you want to have a cancel button in your form that closes the
+            dialog without submitting the form while the normal submit button would submit the form.{" "}
           </p>
           <p>
             <a
